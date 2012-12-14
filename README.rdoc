@@ -1,19 +1,27 @@
 Create Application With Twitter Bootstrap
 
+To use "Devise-Rspec-Cucumber" gem you shold use these gem.
+
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
-rails generate bootstrap:install less
-gem "twitter-bootstrap-rails"
-rails g bootstrap:layout application fixed
-rails g bootstrap:themed Posts
 
+
+$ rails generate bootstrap:install less
+$ rails g bootstrap:layout application fixed
+$ rails g bootstrap:themed Posts
+
+
+If you want Use swatch (theme) then you'll use these gem in your application
 gem 'bootstrap-sass'       # should be already included
 gem 'bootswatch-rails'
 
-+++++++++++++++ Using a swatch (theme)++++++++++++++++
-####twitter_bootstrap.css.scss######
+After that you'll create this file
 
+#twitter_bootstrap.css.scss
+
+and write this code
+==============================================================
 // First import Bootswatch theme variables http://bit.ly/KIu8IN
 @import 'bootswatch/slate/variables';
 
@@ -23,4 +31,4 @@ gem 'bootswatch-rails'
 // And finally Bootswatch style
 @import "bootswatch/slate/bootswatch"
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+================================================================
