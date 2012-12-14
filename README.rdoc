@@ -1,0 +1,26 @@
+Create Application With Twitter Bootstrap
+
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+rails generate bootstrap:install less
+gem "twitter-bootstrap-rails"
+rails g bootstrap:layout application fixed
+rails g bootstrap:themed Posts
+
+gem 'bootstrap-sass'       # should be already included
+gem 'bootswatch-rails'
+
++++++++++++++++ Using a swatch (theme)++++++++++++++++
+####twitter_bootstrap.css.scss######
+
+// First import Bootswatch theme variables http://bit.ly/KIu8IN
+@import 'bootswatch/slate/variables';
+
+// Use Twitter Bootstrap
+@import 'bootstrap';
+
+// And finally Bootswatch style
+@import "bootswatch/slate/bootswatch"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
