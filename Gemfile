@@ -35,6 +35,14 @@ gem "twitter-bootstrap-rails"
 
 gem 'bootstrap-sass'       # should be already included
 gem 'bootswatch-rails'
+
+# To upload file
+gem 'nifty-generators'
+gem 'mocha', :group => :test
+gem "rmagick"
+gem 'carrierwave'
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

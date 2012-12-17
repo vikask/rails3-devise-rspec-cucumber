@@ -1,17 +1,18 @@
 Rails3DeviseRspecCucumber::Application.routes.draw do
-
-
   authenticated :user do
     root :to => 'home#index'
   end
   root :to => "home#index"
   devise_for :users
   resources :users
+  resources :galleries
+
+  resources :paintings
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+     #match 'paintings/:id' => 'paintings#new'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
