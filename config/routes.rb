@@ -1,4 +1,7 @@
 Rails3DeviseRspecCucumber::Application.routes.draw do
+
+
+
   authenticated :user do
     root :to => 'home#index'
   end
@@ -8,6 +11,8 @@ Rails3DeviseRspecCucumber::Application.routes.draw do
   resources :galleries
 
   resources :paintings
+  resources :products
+  #match '/change_picture' => 'products#change_picture'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

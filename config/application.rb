@@ -22,7 +22,8 @@ module Rails3DeviseRspecCucumber
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-
+    config.assets.logger = false
+    config.assets.logger = nil
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
 
@@ -45,7 +46,7 @@ module Rails3DeviseRspecCucumber
       g.view_specs false
       g.helper_specs false
     end
-
+    #config.paperclip_defaults = {:storage => :fog, :fog_credentials => {:provider => "Local", :local_root => "#{Rails.root}/public"}, :fog_directory => "", :fog_host => "localhost"}
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

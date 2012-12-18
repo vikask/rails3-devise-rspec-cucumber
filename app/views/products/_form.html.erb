@@ -1,0 +1,14 @@
+<%= form_for @product, :html => { :multipart => true } do |f| %>
+    <ul class="formList">
+      <!-- Other fields go here... -->
+      <p>
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+      </p>
+      <p>
+        <%= f.file_field :photo %>
+      </p>
+        <%= f.submit "Submit" %>
+      </li>
+    </ul>
+<% end %>

@@ -41,8 +41,14 @@ gem 'nifty-generators'
 gem 'mocha', :group => :test
 gem "rmagick"
 gem 'carrierwave'
+gem "paperclip" , :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'fog'
 
+#gem 'aws-sdk', '~> 1.3.4'
+gem 'rmagick'
 
+gem 'omniauth-github', :git => 'git://github.com/intridea/omniauth-github.git'
+gem 'omniauth-openid', :git => 'git://github.com/intridea/omniauth-openid.git'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
